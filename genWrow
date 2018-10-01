@@ -1,0 +1,5 @@
+for f in data/"$1"-*.dat; do
+	cat "$f" |sort -rn | make run 2>/dev/null | tr '|' ','
+done
+echo
+
